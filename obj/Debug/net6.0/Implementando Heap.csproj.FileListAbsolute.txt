@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\Implementando Heap\bin\Debug\net6.0\Implementando Heap.exe
+C:\Users\Usuario\Documents\Implementando Heap\bin\Debug\net6.0\Implementando Heap.deps.json
+C:\Users\Usuario\Documents\Implementando Heap\bin\Debug\net6.0\Implementando Heap.runtimeconfig.json
+C:\Users\Usuario\Documents\Implementando Heap\bin\Debug\net6.0\Implementando Heap.dll
+C:\Users\Usuario\Documents\Implementando Heap\bin\Debug\net6.0\Implementando Heap.pdb
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.dll
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\refint\Implementando Heap.dll
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.pdb
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\Implementando Heap.genruntimeconfig.cache
+C:\Users\Usuario\Documents\Implementando Heap\obj\Debug\net6.0\ref\Implementando Heap.dll
