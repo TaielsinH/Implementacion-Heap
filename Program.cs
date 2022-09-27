@@ -6,7 +6,7 @@ namespace impHeap
     {
         static void Main (string[] args)
         {
-            int[] lista = new int[]{0, 2, 3, 1, 4, 5, 6, 7, 10, 9, 8, 7};
+            int[] lista = new int[]{0, 11, 3, 1, 4, 5, 6, 7, 10, 9, 8, 7};
             Heap h = new Heap(lista, false);
             imprimirLista(h.getDato);
         }

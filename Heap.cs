@@ -12,46 +12,67 @@ namespace impHeap
         {
             dato = lista;
             this.tipoHeap = tipoHeap;
-            filtradoAbajo();
+            buildHeap();
         }
         public int[] getDato
         {get{return dato;}}
-        private void filtradoAbajo()
+
+        private void filtradoAbajo(int posicion)
         {
-            if(!this.tipoHeap){
-                for (int i = 1; i< this.dato.Length /2; i++)
+            if (!tipoHeap)
+            {
+                try
                 {
-                    if (this.dato[i] > this.dato[2*i])
+                    if (dato[posicion] > dato[posicion * 2])
                     {
-                        int swap = this.dato[i];
-                        this.dato[i] = this.dato[2*1];
-                        this.dato[2*1] = swap;
+                        int swap = dato[posicion];
+                        dato[posicion] = dato[posicion * 2];
+                        dato[posicion * 2] = swap;
+                        filtradoAbajo(posicion * 2);
                     }
-                    if (this.dato[i] > this.dato[(2*i)+1])
+                    if (dato[posicion] > dato[(posicion * 2) + 1])
                     {
-                        int swap = this.dato[i];
-                        this.dato[i] = this.dato[(2*i)+1];
-                        this.dato[(2*i)+1] = swap;
+                        int swap = dato[posicion];
+                        dato[posicion] = dato[(posicion * 2) + 1];
+                        dato[(posicion * 2) + 1] = swap;
+                        filtradoAbajo((posicion * 2) + 1);
                     }
+                }
+                catch (System.IndexOutOfRangeException)
+                {
+                    return;
                 }
             }
-            if(tipoHeap)
+            else
             {
-                for (int i = 0; i<this.dato.Length /2; i++)
+                try
                 {
-                    if (this.dato[i]<this.dato[2*i])
+                    if (dato[posicion] > dato[posicion * 2])
                     {
-                        int swap = this.dato[i];
-                        this.dato[i] = this.dato[2*1];
-                        this.dato[2*1] = swap;
+                        int swap = dato[posicion];
+                        dato[posicion] = dato[posicion * 2];
+                        dato[posicion * 2] = swap;
+                        filtradoAbajo(posicion * 2);
                     }
-                    if (this.dato[i] < this.dato[2*i])
+                    if (dato[posicion] > dato[(posicion * 2) + 1])
                     {
-                        int swap = this.dato[i];
-                        this.dato[i] = this.dato[2*1];
-                        this.dato[2*1] = swap;
+                        int swap = dato[posicion];
+                        dato[posicion] = dato[(posicion * 2) + 1];
+                        dato[(posicion * 2) + 1] = swap;
+                        filtradoAbajo((posicion * 2) + 1);
                     }
                 }
+                catch (System.IndexOutOfRangeException)
+                {
+                    return;
+                }
+            }
+        }
+        private void buildHeap()
+        {
+            for (int i = dato.Length/2; i>0; i--)
+            {
+                filtradoAbajo(i); 
             }
         }
        private void filtradoArriba()
